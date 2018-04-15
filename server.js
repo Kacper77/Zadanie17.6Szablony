@@ -3,7 +3,7 @@ var app = express();
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-app.use('/static', express.static("assets"));
+app.use(express.static('assets'));
 
 
 app.get('/serv', function(req, res) {
